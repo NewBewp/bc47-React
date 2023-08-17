@@ -1,0 +1,16 @@
+.subTitle{
+    color: aqua;
+    background: purple;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.description{
+    color: aquamarine;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.sub-title{
+    color: red;
+}
