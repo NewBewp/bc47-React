@@ -18,6 +18,7 @@ const SideBar = () => {
       <NavLink to={PATH.baiTapPhone}>BTPhoneRedux</NavLink>
       <NavLink to={PATH.baiTapMovieBooking}>BTMovieBooking</NavLink>
       <NavLink to={PATH.baitapForm}>BTForm</NavLink>
+      <NavLink to={PATH.useEffect}>useEffect</NavLink>
     </div>
   );
 };

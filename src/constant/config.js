@@ -12,6 +12,7 @@ export const PATH = {
     redux: '/Redux',
     baiTapPhone: '/Redux/BTPhoneRedux',
     baiTapMovieBooking: '/Redux/BTMovieBooking',
-    baitapForm: '/BTForm'
+    baitapForm: '/BTForm',
+    useEffect: '/DemoUseEffect'
 
 }

@@ -15,79 +15,84 @@ import BTPhoneRedux from "../BTPhoneRedux/BTPhoneRedux"
 import BTMovieBooking from "../BTMovieBooking/BTMovieBooking"
 import NotFound from "../pages/NotFound"
 import BTForm from "../BTForm/BTForm"
+import DemoUseEffect from "../hooks/DemoUseEffect"
 
-export const useRouters = () =>{
+export const useRouters = () => {
     // const t = useRoutes()
 
     // return t
 
     return useRoutes([
         {
-            element: <MainLayout/>,
+            element: <MainLayout />,
             children: [
                 {
                     index: true,
-                    element: <HomePage/>
+                    element: <HomePage />
                 },
                 {
                     path: PATH.baiTapComponent,
-                    element: <BTComponent/>
+                    element: <BTComponent />
                 },
                 {
                     path: PATH.bindingData,
-                    element: <BindingData/>
+                    element: <BindingData />
                 },
                 {
                     path: PATH.renderWithCondition,
-                    element: <RenderWithCondition/>
+                    element: <RenderWithCondition />
                 },
                 {
                     path: PATH.handleEvent,
-                    element: <HandleEvent/>
+                    element: <HandleEvent />
                 },
                 {
                     path: PATH.styleComponent,
-                    element: <StyleComponent/>
+                    element: <StyleComponent />
                 },
                 {
                     path: PATH.demoState,
-                    element: <DemoState/>
+                    element: <DemoState />
                 },
                 {
                     path: PATH.demoProps,
-                    element: <DemoProps/>
+                    element: <DemoProps />
                 },
                 {
                     path: PATH.baiTapShoesShop,
-                    element: <BTShoeShop/>
+                    element: <BTShoeShop />
                 },
                 {
                     path: PATH.redux,
                     children: [
                         {
                             index: true,
-                            element: <DemoRedux/>
+                            element: <DemoRedux />
                         },
                         {
                             path: PATH.baiTapPhone,
-                            element: <BTPhoneRedux/>
+                            element: <BTPhoneRedux />
                         },
                         {
                             path: PATH.baiTapMovieBooking,
-                            element: <BTMovieBooking/>
+                            element: <BTMovieBooking />
                         },
                     ]
                 },
                 {
                     path: PATH.baitapForm,
-                    element: <BTForm/>
+                    element: <BTForm />
+                },
+                {
+                    path: PATH.useEffect,
+                    element: <DemoUseEffect />
                 },
                 {
                     path: '*',
-                    element: <NotFound/>
+                    element: <NotFound />
                 }
             ]
         }
-        
+
     ])
 }
